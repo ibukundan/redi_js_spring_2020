@@ -1,0 +1,23 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornsilk;
+}
+
+
+.newClickButton{
+    font-size: 18px;
+    background-color: brown;
+    text-align: center;
+    padding: 15px;
+    border: 12px;
+    border-radius: 10px;
+}
+
+.big-button{
+    width: 200px;
+    height: 200px;
+}
+
+.main-color{
+    background-color: darkcyan;
+}

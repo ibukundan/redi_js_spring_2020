@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Mouse Over</title>
+</head>
+<body>
+
+    <div class="magicButton">
+		<button id="clickButton" class="newClickButton">Click Button</button>
+	</div>
+    
+
+	<script>
+		let clickButton = document.getElementById("clickButton");
+		const initialLabel = "Cute button";
+
+		function onClick (event) {
+		console.log('Whoa, you just pressed a magic button');
+		}
+
+		function mouseOverHandler (event) {
+			console.log('Your mouse just clicked here!');
+			clickButton.innerText = "Your mouse clicked here!"
+			clickButton.classList.add('main-color');
+			clickButton.classList.add('big-button');
+		}
+
+		function mouseLeaveHandler(event) {
+			console.log('Your mouse just left here!');
+			clickButton.innerText = initialLabel;
+			clickButton.classList.remove('main-color');
+			clickButton.classList.remove('big-button');
+		}
+
+		clickButton.addEventListener("click", onClick);
+		clickButton.addEventListener("mouseover", mouseOverHandler);
+		clickButton.addEventListener("mouseleave", mouseLeaveHandler);
+
+	</script>
+
+</body>
+</html>
